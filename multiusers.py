@@ -44,9 +44,9 @@ except ModuleNotFoundError:  # pragma: no cover - 의존성 안내용
 # ---------------------------------------------------------------------------
 # 경로 & 환경변수
 # ---------------------------------------------------------------------------
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents
 ENV_PATH = REPO_ROOT / ".env"
-LOGO_PATH = REPO_ROOT / "logo.png"
+LOGO_PATH = SCRIPT_DIR / "logo.png"
 
 # .env는 실행 위치와 무관하게 절대경로 기준으로 로드
 load_dotenv(dotenv_path=ENV_PATH)
