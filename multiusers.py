@@ -44,7 +44,8 @@ except ModuleNotFoundError:  # pragma: no cover - 의존성 안내용
 # ---------------------------------------------------------------------------
 # 경로 & 환경변수
 # ---------------------------------------------------------------------------
-REPO_ROOT = Path(__file__).resolve().parents
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 ENV_PATH = REPO_ROOT / ".env"
 LOGO_PATH = SCRIPT_DIR / "logo.png"
 
